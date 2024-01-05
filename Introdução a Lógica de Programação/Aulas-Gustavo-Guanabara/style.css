@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+}
+
+
+:root {
+  font-family: 'Roboto';
+  font-size: 500, 300;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2.5rem;
+  background-color: rgba(0, 0, 0, 0.896);
+  color: rgb(198, 198, 198);
+  
+  width: auto;
+  justify-content: auto;
+  
+  font-family: 'Roboto';
+  margin: 5% 15% 0;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 80vh;
+
+  border:  0px rgba(0, 0, 0, 0.062);
+  /* box-shadow: 5px 5px 5px; */
+  border-radius: 1.5rem;
+  margin-bottom: 1.5rem;
+
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+  gap: 2rem;
+
+  flex-wrap: wrap;
+  align-items: flex-end;
+  
+}
+
+h1{
+  font-size: 500;
+}
+
+p {
+  font-size: 300;
+  margin-top: 1.5rem;
+}
+
+section #imputText {
+  display: flex;
+  width: auto;
+}
+
+output #try {
+  display: flex;
+  flex-direction: column;
+  width: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  gap: .2rem;
+  justify-content: left;
+}
+
+section div p {
+  font-size: 1.2rem;
+}
+
+#aula3 {
+  margin-top: 1.5rem;
+
+}
+
+#aula4 {
+  margin-top: 1.5rem;
+}
+
+#aula5 {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  margin-top: rem;
+}
+
+#aula5 form .btn5 {
+  display: flex;
+  width: fit-content;
+}

@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap');
+
+:root {
+	--btn-primary : #FFFF00;
+	--color-primary: #ddd;
+	--color-bg-light: #eee;
+	--color-bg-dark: #1D1D1D;
+	--color-1: #313329;
+	--color-2: #5D663D;
+	--color-3: #A9CC29;
+	--color-4: #FFFF00;
+}
+
+body, h1, footer {
+	transition: .2s;
+}
+
+body {
+	background-color: var(--color-bg-light);
+	color: var(--color-bg-dark);
+	margin: 0;
+	font-family: 'Quicksand', sans-serif;
+}
+
+body.darkModeClasse {
+	background-color: var(--color-bg-dark);
+	color: var(--color-primary);
+}
+
+main {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+footer {
+	width: 100%;
+	background-color: var(--color-1);
+	padding: 16px;
+	color: var(--color-primary);
+	position: fixed;
+	bottom: 0;
+	text-align: center;
+	font-weight: 400;
+}
+
+footer.c {
+	background-color: var(--color-1);
+	color: var(--color-2);
+}
+
+button {
+	border-radius: 40px;
+	font-size: 1.5rem;
+	height: 60px;
+	width: 200px;
+	border: none;
+	background-color: var(--color-2);
+	color: #e5e8e8;
+}
+
+button:hover {
+	filter: brightness(90%);
+	transition: .2s;
+}
+button:active {
+	transform: scale(103%);
+}
+
+button.darkModeClasse {
+	background-color: var(--color-1);
+	color: var(--color-2);
+	transition: .2s;
+}
+
+button.dark-mode:hover {
+	background-color: var(--color-2);
+	color: #e5e8e8;
+}
+
+

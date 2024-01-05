@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap');
+
+
+* {
+  margin: 0;
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --hue: 190;
+  --primary-color: hsl(var(--hue), 100%, 26%);
+  --headline: hsl(210, 11%, 15%);
+  --paragraph: hsl(210, 9%, 31%);
+
+  --btn-primary : #FFFF00;
+  --color-primary: #FFF;
+  --color-bg: #1D1D1D;
+  --color-1: #313329;
+  --color-2: #5D663D;
+  --color-3: #A9CC29;
+  --color-4: #FFFF00;
+
+  font-size: 62.5%; 
+}
+
+.headerMenu {
+  display: flex;
+  align-items: center;
+}
+
+.headerMenu h1 {
+  color: var(--color-1);
+}
+
+.menu {
+  display: inline-flex;
+
+  align-items: center;
+
+  background-color: var(--color-2);
+  height: 6.5rem;
+  color: var(--color-bg);
+
+  margin-bottom: 8rem;
+  padding-left: 22rem;
+  padding-right: 22rem;
+
+  width: 100%;
+}
+
+.menu h1 {
+  display: flex;
+}
+
+.listItems {
+  display: flex;
+  justify-content:right;
+  padding-right: 2rem;
+  
+}
+
+.listItems li {
+  width: fit-content;
+  color: var(--color-primary);
+
+}
+
+.listItems li:nth-child(2) {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.listItems li a:hover {
+  color: black;
+}
+
+header .listItems {
+  display: flex;  
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+  overflow-x: hidden;
+
+  background-color: var(--color-bg);
+  color: var(--color-primary);
+}
+
+h1, h2 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+  font-weight: 700;
+}
+p,
+a {
+  font-size: 1.6rem;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+section {
+  max-width: 100%;
+}
+
+section .somosFlex {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.flexContainer {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3.2rem;
+  width: 80%;
+}
+
+.apresentacao {
+  padding-left: 8rem;
+  padding-right: 8rem;
+  text-align: left;
+  align-items: center;
+
+  margin-bottom: 5rem;
+}
+
+.textoApresentacao h1 {
+  color: var(--color-2);
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  background: var(--color-2);
+
+  border: none;
+  border-radius: 16px;
+
+  margin-bottom: 6rem;
+
+  padding: 1.6rem 3.2rem;
+  width: fit-content;
+  margin-top: 3rem;
+
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+
+}
+.btn a {
+  text-decoration: none;
+  color: var(--color-1);
+}
+.btn:hover, a:hover {
+  color: white;
+}
+
+.somosFlex img {
+  display: flex;
+  width: 100%;
+  min-width: 20rem;
+  overflow: hidden;
+}
+
+#quemSomos {
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#quemSomos h2 {
+  font-size: 32px;
+  color: var(--color-2);
+  align-items: center;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#quemSomos h2::before {
+  content: '';
+  height: 50px;
+  width: 5px;
+  margin-right: 5px;
+  background-color: var(--btn-primary);
+  position: relative;
+}
+
+#quemSomos p {
+  margin-bottom: 10px;
+  width: 90%;
+}
+
+#quemsomos img {
+  min-width: 420px;
+}
+
+.servicos {
+  background-color: var(--color-2);
+  width: 100%;
+}
+
+#servicos {
+  flex-direction: column;
+  padding: 100px 0;
+
+  padding-top: 3rem;
+  padding-bottom: 6rem;
+
+  padding-left: 22rem;
+  padding-right: 22rem;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.stats .stat {
+  text-align: center;
+}
+
+.servicos H2 {
+  font-size: 4rem;
+  color: var(--color-primary);
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 8rem;
+}
+
+.stats p {
+  color: var(--color-1);
+  line-height: 150%;
+  margin: 2rem 0;
+}
+
+.stat a {
+  color: var(--color-4);
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  background-color: var(--color-1);
+  border-radius: 16px;
+}
+
+.stat a:hover {
+  color: var(--color-primary);
+  transition: .2s;
+}
+
+.stats img {
+  display: inline-flex;
+  width: 50%;
+}
+
+#planos {
+  flex-direction: column;
+
+  display: inline-flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+#planos h2 {
+  font-size: 4rem;
+  padding-top: 5rem;
+
+  text-align: left;
+}
+
+#planos .btn {
+  text-decoration: none;
+  color: white;
+}
+
+.listPlanos {
+  display: inline-flex;
+
+  gap: 2rem;
+  
+  align-items: flex-end;
+  justify-content: space-evenly;
+  align-content: center;
+}
+
+.plano {
+  flex: 1;
+  border: 5px solid var(--color-2);
+  border-radius: 16px;
+  padding: 3rem;
+  text-align: left;
+
+  max-width: 300px;
+}
+
+
+.plano h3 {
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.plano h3::after {
+  content: "";
+
+  background-color: var(--color-1);
+
+  width: 100%;
+  height: 3px;
+  margin-top: 3rem;
+  margin-bottom: 0.6rem;
+}
+
+.plano ul {
+  padding: 2rem 2rem;
+
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.plano ul li{
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 1rem;
+  align-items: center;
+}
+
+.plano ul li::before {
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--color-4);
+  border-radius: 6px;
+  margin-right: 2rem;
+}
+
+footer {
+  display: flex;
+
+  height: 15rem;
+  background-color: var(--color-1);
+  color: var(--color-2);
+
+  align-items: center;
+  margin-top: 8rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--color-3);
+}
+
+footer a:hover {
+  color: var(--color-2);
+}

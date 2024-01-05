@@ -1,0 +1,43 @@
+<body>
+  <header>
+    
+    <h1>
+      Gerador de Sequências Numéricas Interativas com Soma Total
+    </h1>
+    <p>
+      Esse código permite que o usuário insira um valor de salto e um valor final, e em seguida, gera uma sequência de números com base no salto fornecido. Essa sequência de números é exibida na página e a soma total desses números é calculada. Além disso, o código também permite que o usuário oculte ou exiba a soma total clicando em um botão. Isso pode ser útil para visualizar e calcular sequências numéricas de maneira interativa.
+    </p>
+  </header>
+
+  <section id="aula9">
+    <div>
+      <p>Instrua a aplicação com seus valores</p>
+      <form id="r09_1">
+        <label for="nSalto">Insira o numero do salto</label>
+        <input type="number" name="nSalto" id="nSalto">
+
+        <label for="nFinal">Gostaria de contar ate qual numero?</label>
+        <input type="number" name="nFinal" id="nFinal">
+
+        <input type="button" value="Mostrar Interações" onclick="contadorSalto()">
+        <input type="button" value="Mostrar Soma" onclick="exibirDiv(); exibirSoma();" id="btnTrocandoNome">
+
+
+      </form>
+      <!-- mostrando ARRAY -->
+      <p id="mostrandoInteracoes"></p>
+      <div id="takeDiv" style="display: none;">
+        <p id="mostrandoSomaInt"></p>
+      </div>
+      
+
+    </div>
+
+    
+
+
+  </section>
+  
+
+  <script src="./index.js"></script>
+</body>
